@@ -232,4 +232,4 @@ This project is developed for educational and portfolio purposes.
 
 ---
 
-\<p align="center">   \<strong>Āfāq — The universe is waiting to be explored.\</strong> \</p>      نضيفه هنا
+\<p align="center">   \<strong>Āfāq — The universe is waiting to be explored.\</strong> \</p>    
