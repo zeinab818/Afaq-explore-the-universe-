@@ -10,7 +10,7 @@ import {
   Camera,
   Expand,
   Image as ImageIcon,
-  LoaderCircle,
+  
   Orbit,
   Telescope,
 } from "lucide-react";
@@ -198,7 +198,7 @@ const [photographer, setPhotographer] = useState<{
 
       {/* ================= TOP NAVIGATION ================= */}
 
-  <header className="relative z-50 mx-auto flex w-full max-w-[1600px] items-center justify-between px-6 py-7 md:px-12 lg:px-16">
+ <header className="relative z-0 mx-auto flex w-full max-w-[1600px] items-center justify-between px-6 py-7 md:px-12 lg:px-16">
         <Link href="/" className="group flex items-center gap-4">
           <span className="inline-block text-3xl text-[#e7c98b] transition-transform duration-500 group-hover:rotate-45">
   ✳

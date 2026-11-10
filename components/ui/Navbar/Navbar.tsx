@@ -34,18 +34,19 @@ export default function Navbar() {
 
   return (
     <nav
-      className="
-        fixed
-        inset-x-0
-        top-0
-        z-50
-        w-full
-        border-b
-        border-white/6
-        bg-background/80
-        backdrop-blur-xl
-      "
-    >
+  className="
+    fixed
+    inset-x-0
+    top-0
+    z-[100]
+    w-full
+    border-b
+    border-white/10
+    bg-[#090914]/95
+    shadow-lg
+    backdrop-blur-2xl
+  "
+>
       {/* ================= HEADER ================= */}
 
       <div
@@ -391,24 +392,24 @@ export default function Navbar() {
       </div>
 
       {/* ================= MOBILE NAVIGATION ================= */}
-
-      {mobileMenuOpen && (
-        <div
-          className="
-            absolute
-            z-99999
-            inset-x-0
-            top-full
-            max-h-[calc(100dvh-4.25rem)]
-            overflow-y-auto
-            overscroll-contain
-            border-t
-            border-white/6
-            bg-background/95
-            backdrop-blur-xl
-            lg:hidden
-          "
-        >
+{mobileMenuOpen && (
+  <div
+    className="
+      absolute
+      inset-x-0
+      top-full
+      z-[110]
+      max-h-[calc(100dvh-4.25rem)]
+      overflow-y-auto
+      overscroll-contain
+      border-t
+      border-white/10
+      bg-[#090914]
+      shadow-2xl
+      backdrop-blur-2xl
+      lg:hidden
+    "
+  >
           <div
             className="
               mx-auto
