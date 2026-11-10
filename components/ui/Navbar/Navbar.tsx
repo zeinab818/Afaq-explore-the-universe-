@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -125,13 +124,10 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:items-center lg:gap-4">
           <NavigationMenu>
             <NavigationMenuList>
-
               {/* PLANETS */}
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>
-                  Planets
-                </NavigationMenuTrigger>
+                <NavigationMenuTrigger>Planets</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
                   <div
@@ -174,7 +170,8 @@ export default function Navbar() {
                           "
                         >
                           <div>
-                            <div className="
+                            <div
+                              className="
                               mb-3
                               flex size-10
                               items-center justify-center
@@ -183,7 +180,8 @@ export default function Navbar() {
                               text-primary-light
                               transition-transform duration-300
                               group-hover:scale-110
-                            ">
+                            "
+                            >
                               ✦
                             </div>
 
@@ -223,9 +221,7 @@ export default function Navbar() {
               {/* DISCOVER */}
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger>
-                  Discover
-                </NavigationMenuTrigger>
+                <NavigationMenuTrigger>Discover</NavigationMenuTrigger>
 
                 <NavigationMenuContent>
                   <div
@@ -242,7 +238,8 @@ export default function Navbar() {
                       </h2>
 
                       <p className="mt-1 max-w-xl text-sm leading-5 text-foreground-secondary">
-                        Explore the wonders, mysteries, and phenomena of the universe.
+                        Explore the wonders, mysteries, and phenomena of the
+                        universe.
                       </p>
 
                       <p className="mt-3 text-[10px] font-medium uppercase tracking-[0.2em] text-primary-light">
@@ -337,7 +334,6 @@ export default function Navbar() {
                   About
                 </NavigationMenuLink>
               </NavigationMenuItem>
-
             </NavigationMenuList>
           </NavigationMenu>
 
@@ -390,11 +386,7 @@ export default function Navbar() {
             lg:hidden
           "
         >
-          {mobileMenuOpen ? (
-            <X size={20} />
-          ) : (
-            <Menu size={20} />
-          )}
+          {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
@@ -404,6 +396,7 @@ export default function Navbar() {
         <div
           className="
             absolute
+            z-99999
             inset-x-0
             top-full
             max-h-[calc(100dvh-4.25rem)]
@@ -428,15 +421,12 @@ export default function Navbar() {
             "
           >
             <div className="flex flex-col gap-2">
-
               {/* ================= PLANETS ================= */}
 
               <div>
                 <button
                   type="button"
-                  onClick={() =>
-                    setMobilePlanetsOpen((prev) => !prev)
-                  }
+                  onClick={() => setMobilePlanetsOpen((prev) => !prev)}
                   aria-expanded={mobilePlanetsOpen}
                   className="
                     flex w-full
@@ -501,14 +491,16 @@ export default function Navbar() {
                             hover:bg-white/5
                           "
                         >
-                          <div className="
+                          <div
+                            className="
                             mb-2
                             flex size-8
                             items-center justify-center
                             rounded-full
                             bg-primary/10
                             text-primary-light
-                          ">
+                          "
+                          >
                             ✦
                           </div>
 
@@ -550,9 +542,7 @@ export default function Navbar() {
               <div>
                 <button
                   type="button"
-                  onClick={() =>
-                    setMobileDiscoverOpen((prev) => !prev)
-                  }
+                  onClick={() => setMobileDiscoverOpen((prev) => !prev)}
                   aria-expanded={mobileDiscoverOpen}
                   className="
                     flex w-full
@@ -594,7 +584,8 @@ export default function Navbar() {
                       </h3>
 
                       <p className="mt-1 text-xs leading-5 text-foreground-secondary">
-                        Explore the wonders, mysteries, and phenomena of the universe.
+                        Explore the wonders, mysteries, and phenomena of the
+                        universe.
                       </p>
 
                       <p className="mt-2 text-[10px] font-medium uppercase tracking-[0.2em] text-primary-light">
@@ -621,7 +612,8 @@ export default function Navbar() {
                             hover:bg-white/5
                           "
                         >
-                          <div className="
+                          <div
+                            className="
                             mb-2
                             flex size-8
                             items-center justify-center
@@ -631,7 +623,8 @@ export default function Navbar() {
                             text-primary-light
                             transition-transform duration-300
                             group-hover:scale-110
-                          ">
+                          "
+                          >
                             {item.icon}
                           </div>
 
@@ -705,7 +698,6 @@ export default function Navbar() {
               >
                 Explore →
               </Link>
-
             </div>
           </div>
         </div>
