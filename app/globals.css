@@ -1,26 +1,390 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* =========================================================
+   ĀFĀQ — DESIGN SYSTEM
+   ========================================================= */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ================================
+     BACKGROUNDS
+     ================================ */
+
+  --background: #0b0e17;
+  --background-secondary: #080b12;
+
+  /* ================================
+     SURFACES
+     ================================ */
+
+  --surface: #111827;
+  --surface-secondary: #1b1f2e;
+  --surface-card: #2a2f45;
+  --surface-hover: rgba(255, 255, 255, 0.04);
+
+  /* ================================
+     TEXT
+     ================================ */
+
+  --foreground: #e6e6ff;
+  --foreground-secondary: #a7adbd;
+  --foreground-muted: #6f7689;
+
+  /* ================================
+     PRIMARY — PURPLE
+     ================================ */
+
+  --primary: #6d5df6;
+  --primary-hover: #b18cff;
+  --primary-light: #b18cff;
+
+  /* ================================
+     ACCENT — GOLD
+     Mainly for Qur'an sections
+     ================================ */
+
+  --accent: #f2c94c;
+  --accent-hover: #f7d66f;
+  --accent-muted: rgba(242, 201, 76, 0.12);
+
+  /* ================================
+     BORDERS
+     ================================ */
+
+  --border: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.12);
+
+  /* ================================
+     GLOW
+     ================================ */
+
+  --glow-primary: rgba(109, 93, 246, 0.35);
+  --glow-purple: rgba(177, 140, 255, 0.35);
+  --glow-gold: rgba(242, 201, 76, 0.25);
+
+  /* ================================
+     NAVIGATION
+     ================================ */
+
+  --nav-background: #080b12;
+  --nav-text: #a7adbd;
+  --nav-text-active: #f8fafc;
+  --nav-hover: rgba(255, 255, 255, 0.04);
+  --nav-active: rgba(177, 140, 255, 0.1);
+
+  /* ================================
+     RADIUS
+     ================================ */
+
+  --radius: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ================================
+     SHADCN / SYSTEM
+     ================================ */
+
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+
+  --popover: var(--surface);
+  --popover-foreground: var(--foreground);
+
+  --secondary: var(--surface-secondary);
+  --secondary-foreground: var(--foreground);
+
+  --muted: var(--surface-secondary);
+  --muted-foreground: var(--foreground-secondary);
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --input: var(--border);
+  --ring: var(--primary);
 }
+
+/* =========================================================
+   TAILWIND THEME
+   ========================================================= */
 
 @theme inline {
+  /* Colors */
+
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+
+  --color-surface: var(--surface);
+  --color-surface-secondary: var(--surface-secondary);
+  --color-surface-card: var(--surface-card);
+  --color-surface-hover: var(--surface-hover);
+
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-muted: var(--foreground-muted);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-muted: var(--accent-muted);
+
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+
+  --color-nav-background: var(--nav-background);
+  --color-nav-text: var(--nav-text);
+  --color-nav-text-active: var(--nav-text-active);
+  --color-nav-hover: var(--nav-hover);
+  --color-nav-active: var(--nav-active);
+
+  /* Fonts */
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space-grotesk);
+
+  /* Radius */
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-full: var(--radius-full);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* =========================================================
+   BASE
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
+
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: var(--font-inter), sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+button,
+a {
+  font-family: var(--font-inter), sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: var(--primary);
+  color: var(--foreground);
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-card);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   GLASS EFFECT
+   ========================================================= */
+
+.glass {
+  background: rgba(8, 11, 18, 0.65);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+/* =========================================================
+   COSMIC GLOW
+   ========================================================= */
+
+.cosmic-glow {
+  box-shadow:
+    0 0 30px var(--glow-primary),
+    0 0 80px rgba(109, 93, 246, 0.12);
+}
+
+.gold-glow {
+  box-shadow:
+    0 0 25px var(--glow-gold),
+    0 0 60px rgba(242, 201, 76, 0.08);
+}
+
+
+@keyframes sunPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.025);
+  }
+}
+
+@keyframes sunSurface {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+/* APOD cinematic page */
+
+.apod-page {
+  isolation: isolate;
+}
+
+.apod-orb {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 9999px;
+  filter: blur(110px);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.apod-orb-gold {
+  top: 8%;
+  left: -220px;
+  background: #e7c98b;
+}
+
+.apod-orb-violet {
+  top: 35%;
+  right: -240px;
+  background: #8b5cf6;
+  opacity: 0.13;
+}
+
+/* Framed artwork */
+
+.apod-frame {
+  position: relative;
+  padding: 10px;
+  border: 1px solid rgb(231 201 139 / 25%);
+  background:
+    linear-gradient(145deg, rgb(231 201 139 / 9%), transparent 35%),
+    #0d111c;
+  box-shadow:
+    0 30px 100px rgb(0 0 0 / 45%),
+    0 0 50px rgb(167 139 250 / 5%);
+}
+
+.apod-frame::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgb(255 255 255 / 5%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.apod-frame-inner {
+  overflow: hidden;
+  background: #080b13;
+}
+
+.apod-frame-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 5px 3px;
+  color: rgb(255 255 255 / 38%);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+}
+
+.apod-frame-caption span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.apod-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e7c98b;
+  box-shadow: 0 0 10px rgb(231 201 139 / 70%);
+}
+
+@media (max-width: 640px) {
+  .apod-frame {
+    padding: 6px;
+  }
+
+  .apod-frame-caption {
+    font-size: 8px;
+    letter-spacing: 0.12em;
+  }
 }
