@@ -17,7 +17,7 @@ export const articles = [
     tag: "COSMIC EXPANSION",
     tafsirNote: "In Ibn Kathir’s explanation, بِأَيْدٍ is understood as strength, and لَمُوسِعُونَ as the vastness and elevation of the heaven. This is an important classical reading to show alongside modern discussions.",
     scienceNote: "The expansion of the universe is inferred from observations including the redshift of distant galaxies, interpreted together with distance measurements and cosmological models.",
-    boundary: "Do not claim that this verse unambiguously states the modern cosmological model or that a scientific paper proves one specific tafsir.",
+    boundary:"The verse has been discussed in different ways by scholars. Modern observations of cosmic expansion offer a scientific subject for reflection, but they do not establish one exclusive interpretation of the verse.",
   },
   {
     number: "02",
@@ -36,7 +36,7 @@ export const articles = [
     tag: "ORBITAL MOTION",
     tafsirNote: "The verse describes the created order of night, day, Sun, and Moon, and says that each moves in a falak. Explain the wording through tafsir without forcing modern orbital mechanics into every term.",
     scienceNote: "Earth orbits the Sun; the Moon orbits Earth; the Sun also moves within the Milky Way. These are distinct motions on different scales.",
-    boundary: "The verse is not a list of the eight planets and should not be presented as such.",
+    boundary:"The verse describes celestial motion in broad terms. Modern astronomy provides more detailed explanations of the different orbital motions of celestial bodies"
   },
   {
     number: "03",
@@ -55,7 +55,7 @@ export const articles = [
     tag: "MOON PHASES",
     tafsirNote: "The verse describes the Moon’s measured stations and uses the image of an old date-stalk at the end of its cycle. Keep the Arabic image and its tafsir central to the explanation.",
     scienceNote: "The familiar phases arise from the changing geometry of the Sun, Earth, and Moon. The Moon’s approximately 29.5-day phase cycle is longer than its 27.3-day orbit relative to the stars.",
-    boundary: "The Moon does not physically change shape, and its ordinary phases are not caused by Earth’s shadow.",
+    boundary:"The Moon's phases result from the changing positions of the Sun, Earth, and Moon. Earth's shadow is responsible for lunar eclipses, not the ordinary monthly phases"
   },
   {
     number: "04",
@@ -74,7 +74,7 @@ export const articles = [
     tag: "EARLY UNIVERSE",
     tafsirNote: "Classical tafsir records explanations such as the heavens and Earth being joined and then separated, as well as explanations involving the sky withholding rain and the Earth withholding vegetation before being opened. Present the range rather than declaring one modern cosmological reading definitive.",
     scienceNote: "The hot Big Bang model describes the evolution of the observable universe from an earlier hot, dense state. Evidence includes cosmic expansion and the cosmic microwave background.",
-    boundary: "The verse should not be labelled a direct, unambiguous prediction of the Big Bang model.",
+    boundary:"Classical explanations of this verse include more than one interpretation. The Big Bang model is a scientific account of the universe's early evolution, not a definitive identification of the verse's meaning"
   },
   {
     number: "05",
@@ -93,7 +93,8 @@ export const articles = [
     tag: "STAR LIFECYCLE",
     tafsirNote: "The oath by the positions or settings of the stars is discussed in tafsir with more than one explanation. Avoid treating one modern astronomical interpretation as the only accepted meaning.",
     scienceNote: "Stars form in clouds of gas and dust. Their mass strongly influences their evolution, ending, and the elements they return to space.",
-    boundary: "Do not identify مواقع النجوم exclusively with stellar positions at light-travel-time or with redshift without a sound tafsir basis.",
+    boundary:"Astronomy explains stellar life cycles through physical evidence. These scientific processes can be explored alongside the verse without assigning it a technical astronomical meaning"
+
   },
   {
     number: "06",
@@ -112,7 +113,7 @@ export const articles = [
     tag: "EXOPLANETS",
     tafsirNote: "The verse speaks of Allah’s signs in the creation of the heavens and Earth and what He has dispersed within them. It does not name exoplanets or report a confirmed discovery of extraterrestrial life.",
     scienceNote: "Exoplanets are planets beyond our Solar System. They are detected mainly through methods such as transits and radial velocity; detecting a planet is not the same as detecting life.",
-    boundary: "The existence of life beyond Earth remains unconfirmed. This verse is not scientific proof of extraterrestrial organisms.",
+    boundary:"Thousands of exoplanets have been discovered, but life beyond Earth has not yet been confirmed. The verse should be read through its Qur'anic context and tafsir"
   },
   {
     number: "07",
@@ -131,8 +132,7 @@ export const articles = [
     tag: "NAVIGATION",
     tafsirNote: "The verse explicitly mentions the stars as means of guidance in land and sea. Explain the practical guidance of stars in its historical and linguistic context.",
     scienceNote: "For centuries, observers used star positions and apparent motions to estimate direction and latitude. Modern navigation generally relies on other technologies, while celestial navigation remains a real method.",
-    boundary: "Do not conflate constellations used for navigation with the astrological zodiac or claims about human fate.",
-  },
+    boundary:"The verse refers to guidance through the stars. This practical role is distinct from astrology, which makes claims about personality or human destiny."  },
   {
     number: "08",
     category: "ECLIPSES",
@@ -150,8 +150,7 @@ export const articles = [
     tag: "ECLIPSES",
     tafsirNote: "Al-Qiyamah 75:7–9 describes events of the Last Day. The joining of the Sun and Moon belongs to that eschatological passage, not to an ordinary eclipse report.",
     scienceNote: "A solar eclipse occurs when the Moon passes between Earth and the Sun. A lunar eclipse occurs when the Moon passes through Earth’s shadow.",
-    boundary: "The verse is not a scientific explanation of solar or lunar eclipses; keep its Hereafter context clear.",
-  },
+    boundary:"The passage describes events associated with the Last Day. Solar and lunar eclipses are separate astronomical phenomena explained by the alignment of celestial bodies."  },
   {
     number: "09",
     category: "THE SUN",
@@ -167,8 +166,7 @@ export const articles = [
     tag: "SOLAR PHYSICS",
     tafsirNote: "Classical explanations discuss the Sun’s course and its appointed term or destination. The verse should not be presented as a technical description of one specific modern orbital model.",
     scienceNote: "The Sun is a G-type main-sequence star. Its energy is produced by nuclear fusion in its core; solar activity includes sunspots, flares, and coronal mass ejections.",
-    boundary: "The scientific description of solar motion and the exegetical meaning of مستقر are related topics, but they are not interchangeable claims.",
-  },
+    boundary:"Astronomy describes the Sun's rotation, motion, and physical properties. The exegetical meaning of مستقر should be explored through tafsir rather than treated as a direct technical equivalent"  },
   {
     number: "10",
     category: "THE MOON",
@@ -180,11 +178,11 @@ export const articles = [
     image: "https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?auto=format&fit=crop&w=1400&q=85",
     quran: "https://quran.com/54/1",
     science: "https://science.nasa.gov/moon/",
-    research: "https://science.nasa.gov/moon/moon-formation/",
+    research: "https://science.nasa.gov/moon/formation/",
     tag: "LUNAR EXPLORATION",
     tafsirNote: "Classical mainstream tafsir treats this verse as referring to the splitting of the Moon as a sign given to the Prophet ﷺ. This is distinct from a lunar eclipse; the verse should be read with its following context and tafsir.",
     scienceNote: "The Moon is tidally locked to Earth, so nearly the same hemisphere faces us. Its average distance is about 384,400 km; its gravity also contributes to ocean tides.",
-    boundary: "The Moon’s phases are not caused by Earth’s shadow. Earth’s shadow causes a lunar eclipse, which is a different alignment event.",
+    boundary:"The splitting of the Moon is discussed in classical tafsir as a sign associated with the Prophet ﷺ. This subject is distinct from lunar phases and eclipses"
   },
   {
     number: "11",
@@ -201,7 +199,7 @@ export const articles = [
     tag: "PHASES & TIME",
     tafsirNote: "The verse explicitly connects the Moon’s measured stations with reckoning of years and time. Consult tafsir for the meaning of ضياء and نور and the full context.",
     scienceNote: "The Moon does not make its own visible light; it reflects sunlight. As it orbits Earth, we see changing portions of its sunlit hemisphere.",
-    boundary: "A phase cycle is not the same as a lunar eclipse. The Moon passes through phases every month, while eclipses require a more specific alignment.",
+    boundary:"The Moon's phases help mark time and form the basis of lunar calendars. They are different from eclipses, which occur only under specific orbital alignments"
   },
   {
     number: "12",
@@ -218,7 +216,7 @@ export const articles = [
     tag: "EARTH & TIME",
     tafsirNote: "The verse uses the Arabic root ك و ر, associated with wrapping or winding. Its meaning should be explained from recognized tafsir and the surrounding passage.",
     scienceNote: "Earth’s rotation causes the regular cycle of day and night. Earth’s axial tilt, together with its orbit around the Sun, produces the seasons.",
-    boundary: "Do not turn a linguistic image into a claim that the verse is a modern physics textbook; explain the text and the astronomy on their own terms.",
+    boundary:"The Arabic expression يكور carries a linguistic image of wrapping or winding. Earth's rotation provides the scientific explanation for the regular alternation of day and night"
   },
   {
     number: "13",
@@ -230,12 +228,13 @@ export const articles = [
     summary: "Move from the atmosphere around Earth to the immense space beyond it, while exploring the verse’s language and classical explanations with care.",
     image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1400&q=85",
     quran: "https://quran.com/21/32",
-    science: "https://science.nasa.gov/earth/atmosphere/",
+    science: "https://science.nasa.gov/kids/earth/atmosphere/",
     research: "https://science.nasa.gov/earth/",
     tag: "ATMOSPHERE & SPACE",
     tafsirNote: "The phrase السقف المحفوظ is discussed in tafsir in relation to the sky and its protection by Allah. The interpretation should not be narrowed to one atmospheric layer without evidence.",
     scienceNote: "Earth’s atmosphere helps regulate temperature and shields the surface from much harmful radiation and many small incoming meteoroids. The magnetosphere also helps deflect charged solar particles.",
-    boundary: "The verse should not be equated exclusively with the ozone layer, atmosphere, or magnetosphere; these are distinct scientific systems.",
+    boundary:"Earth's atmosphere and magnetosphere provide different forms of protection. They are scientific systems that can be studied without reducing the verse to any one of them ."  
+  
   },
   {
     number: "14",
@@ -252,8 +251,7 @@ export const articles = [
     tag: "SMALL SOLAR SYSTEM BODIES",
     tafsirNote: "The verse belongs to a passage concerning the guarded heaven and the devils’ attempted eavesdropping. Its unseen subject matter should not be collapsed into an ordinary meteor shower explanation.",
     scienceNote: "A meteoroid is a small rocky or metallic body in space; a meteor is the luminous phenomenon as it enters an atmosphere; a meteorite is material that reaches the ground. Comets are icy bodies that can develop comae and tails near the Sun.",
-    boundary: "A scientific meteor and the Qur’anic term شهاب in this passage are not automatically identical in meaning or context.",
-  },
+    boundary:"The Qur'anic passage discusses matters of the unseen in its own context. Meteors, meteorites, and comets are distinct astronomical subjects and should not automatically be equated with the term ."  },
   {
     number: "15",
     category: "CONSTELLATIONS",
@@ -264,13 +262,12 @@ export const articles = [
     summary: "Discover how astronomers divide the celestial sphere into 88 officially recognized constellations, and how apparent star patterns help us map the sky.",
     image: "https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=1400&q=85",
     quran: "https://quran.com/85/1",
-    science: "https://www.iau.org/public/themes/constellations/",
-    research: "https://www.iau.org/public/themes/constellations/",
+    science: "https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx",
+    research: "https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx",
     tag: "MAPPING THE SKY",
     tafsirNote: "The word البروج has been explained in classical tafsir with meanings including great celestial formations or mansions. Do not assume it maps one-to-one onto modern constellation boundaries.",
     scienceNote: "Constellations are defined regions of the sky. Stars that look close together from Earth can be at very different distances and may not be physically associated.",
-    boundary: "The modern IAU system is a scientific sky-mapping convention; it is not itself the definitive tafsir of البروج.",
-  },
+    boundary:"Modern constellations are officially defined regions of the celestial sphere. The meaning of البروج in the Qur'an should be understood through its linguistic and exegetical context ."  },
   {
     number: "16",
     category: "STARS",
@@ -286,28 +283,11 @@ export const articles = [
     tag: "STELLAR LIGHT",
     tafsirNote: "The opening oath has been discussed by exegetes in more than one way. Present attributed interpretations rather than assigning the verse to a particular star or modern object.",
     scienceNote: "A star’s spectrum carries information about its temperature, chemical composition, and motion. Stars form in clouds of gas and dust and evolve according to their mass.",
-    boundary: "Do not identify النجم الثاقب or مواقع النجوم with a specific pulsar, redshift phenomenon, or other modern discovery as a settled fact.",
-  },
-  {
-    number: "17",
-    category: "THE HEREAFTER",
-    title: "The End of the Present Cosmos",
-    question: "How does the Qur’an describe the end of the world as we know it?",
-    verse: "إِذَا الشَّمْسُ كُوِّرَتْ ۝ وَإِذَا النُّجُومُ انكَدَرَتْ",
-    reference: "At-Takwir 81:1–2",
-    summary: "Read Qur’anic descriptions of the Last Day as matters of the unseen and revelation. Compare carefully—without equating them—with scientific models of stellar and cosmic evolution.",
-    image: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1400&q=85",
-    quran: "https://quran.com/81/1-2",
-    science: "https://science.nasa.gov/universe/",
-    research: "https://science.nasa.gov/universe/",
-    tag: "COSMIC DESTINY",
-    tafsirNote: "These verses belong to the Qur’anic portrayal of the events of the Last Day. Their meaning is grounded in revelation and tafsir, not in a speculative scientific timeline.",
-    scienceNote: "Astrophysics studies possible long-term futures of stars, galaxies, and the universe. These models rely on physical observations and remain distinct from revealed descriptions of the Hereafter.",
-    boundary: "A scientific hypothesis about the far future is not an explanation or proof of the events of the Last Day.",
-  },
+    boundary:"Astronomy reveals remarkable properties of stars through their light. These discoveries provide opportunities for reflection without establishing a specific modern object as the definitive meaning of the verse."  },
+  
 
   {
-    number: "18",
+    number: "17",
     category: "STELLAR SCIENCE",
     title: "At-Tariq: The Piercing Star",
     question: "What is the meaning of the piercing star?",
@@ -319,18 +299,17 @@ export const articles = [
     image:
       "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1400&q=85",
     quran: "https://quran.com/86/1-3",
-    science: "https://science.nasa.gov/universe/neutron-stars/",
-    research: "https://science.nasa.gov/universe/neutron-stars/",
+    science: "https://www.nasa.gov/universe/stars/neutron-stars/",
+    research: "https://www.nasa.gov/universe/stars/neutron-stars/",
     tag: "THE PIERCING STAR",
     tafsirNote:
       "In the classical explanations, الطارق is the star that appears at night, and الثاقب is described as bright, shining, or piercing in its light. Al-Tabari reports explanations from early authorities such as Ibn Abbas describing it as المضيء, while Ibn Kathir also explains the nightly appearance of the star. Reports identifying it with particular stars should be presented as reported opinions, not as a single agreed identification.",
     scienceNote:
       "Astronomy offers many fascinating subjects for further exploration: the brightness of stars, stellar evolution, neutron stars, and pulsars. A pulsar is a rotating neutron star whose beams of radiation can be detected as regular pulses when they sweep across our line of sight. These objects are among the most extreme known stellar remnants.",
     boundary:
-      "The Qur’anic passage does not identify النجم الثاقب by a modern astronomical name. A pulsar or neutron star can be explored as a scientific topic alongside the verse, but it must not be presented as the definitive identity or scientific proof of the verse.",
-  },
+"Pulsars and neutron stars are fascinating astronomical objects. They can be explored alongside the verse, but the Qur'an does not identify النجم الثاقب by either modern astronomical name."  },
   {
-    number: "19",
+    number: "18",
     category: "STELLAR SCIENCE",
     title: "Al-Shi‘ra: The Star Sirius",
     question: "What makes Sirius one of the most remarkable stars in our sky?",
@@ -351,8 +330,7 @@ export const articles = [
     scienceNote:
       "Sirius is the brightest star in Earth's night sky as seen with the naked eye. It lies about 8.6 light-years away in the constellation Canis Major. What appears to us as one brilliant star is a binary system: Sirius A, a bright main-sequence star, and Sirius B, a much fainter white dwarf. The two stars orbit each other in roughly 50 years. Sirius B is a stellar remnant: the dense leftover core of a star that has exhausted its nuclear fuel.",
     boundary:
-      "The verse names Al-Shi‘ra; it does not describe the binary nature of Sirius or predict the discovery of Sirius B. Those are modern astronomical findings that we can study separately while reflecting on the verse.",
-  },
+"Sirius is a binary star system consisting of Sirius A and Sirius B. These astronomical discoveries expand our knowledge of the star, while the central message of the verse concerns Allah's Lordship"  },
 
 ];
 
