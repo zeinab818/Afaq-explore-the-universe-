@@ -99,7 +99,7 @@ export default function AppSidebar() {
        left-0
        top-0
     
-        z-999
+        z-[999]
         border-white/6
         bg-background/80
         backdrop-blur-none
