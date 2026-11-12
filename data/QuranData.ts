@@ -332,6 +332,49 @@ export const articles = [
     boundary:
 "Sirius is a binary star system consisting of Sirius A and Sirius B. These astronomical discoveries expand our knowledge of the star, while the central message of the verse concerns Allah's Lordship"  },
 
+
+
+{
+  number: "19",
+  category: "COSMIC ELEMENTS",
+
+  title: "Iron: From Stellar Origins to Earth's Core",
+
+  question:
+    "Why is iron found on Earth and in meteorites?",
+
+  verse:
+    "وَأَنزَلْنَا الْحَدِيدَ فِيهِ بَأْسٌ شَدِيدٌ وَمَنَافِعُ لِلنَّاسِ",
+
+  reference: "Al-Hadid 57:25",
+
+  summary:
+    "Explore iron as an essential element, from its formation through stellar processes to its presence in Earth's structure and iron meteorites. Discover the cosmic history of an element that became fundamental to our planet and human civilization.",
+
+  image:
+    "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1400&q=85",
+
+  quran:
+    "https://quran.com/57/25",
+
+  science:
+    "https://science.nasa.gov/solar-system/meteors-meteorites/",
+
+  research:
+    "https://doi.org/10.1098/rsta.2019.0301",
+
+  tag: "IRON & COSMIC ORIGINS",
+
+  tafsirNote:
+    "Al-Tabari explains the iron mentioned in the verse through its great strength and benefits for people, including its use in weapons, tools, and other practical purposes. The verse occurs within a wider discussion of the messengers, divine revelation, justice, and human responsibility. The word أَنزَلْنَا should first be understood within its Qur'anic and exegetical context. It should not automatically be interpreted as a statement that iron physically arrived on Earth through meteorites.",
+
+  scienceNote:
+    "Iron (Fe) is a chemical element with atomic number 26. It is one of the most abundant elements on Earth and is the main constituent of Earth's core by mass. Iron is formed through nuclear processes in stars and is dispersed into space through stellar evolution and explosive events. This material later became part of the gas and dust from which the Solar System formed. Iron is also found in meteorites, particularly iron meteorites, which consist mainly of iron and nickel and often represent metallic material from the cores of ancient differentiated asteroids. On Earth, iron occurs in minerals and rocks and is essential to modern civilization. Its strength, durability, and ability to form useful alloys make it indispensable in construction, machinery, transportation, and technology.",
+
+  boundary:
+    "Iron meteorites provide direct evidence that iron-rich material exists beyond Earth and that metallic material was present in the early Solar System. However, they do not demonstrate that all, or most, of Earth's iron arrived through meteorite impacts. Earth's iron has a complex history connected to the formation and differentiation of the planet from the early Solar System's materials. The scientific study of iron's cosmic origins is distinct from the interpretation of the Qur'anic verse. Neither meteorites nor stellar nucleosynthesis should be presented as definitive proof of a particular tafsir."
+}
+
 ];
 
 
