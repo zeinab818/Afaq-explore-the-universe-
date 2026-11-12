@@ -27,7 +27,7 @@ import {
   Radio,
   Rocket,
   Newspaper,
-
+  BrainCircuit,
   ImageIcon,
    CalendarDays,
    FlaskConical,
@@ -383,64 +383,129 @@ export default function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
+        
         {/* ================= MY SPACE ================= */}
 
-<SidebarGroup className="mt-4">
-  <SidebarGroupLabel
-    className="
-      px-3
-      text-[10px]
-      uppercase
-      tracking-[0.2em]
-      text-foreground-muted
-      group-data-[collapsible=icon]:hidden
-    "
-  >
-    My Space
-  </SidebarGroupLabel>
+        <SidebarGroup className="mt-4">
+          <SidebarGroupLabel
+            className="
+              px-3
+              text-[10px]
+              uppercase
+              tracking-[0.2em]
+              text-foreground-muted
+              group-data-[collapsible=icon]:hidden
+            "
+          >
+            My Space
+          </SidebarGroupLabel>
 
-  <SidebarGroupContent>
-    <SidebarMenu>
-      <SidebarMenuItem>
-        <SidebarMenuButton
-          isActive={isActive("/my-exploration")}
-          tooltip="My Exploration"
-          render={<Link href="/my-exploration" />}
-          className="
-            relative
-            h-11
-            w-full
-            rounded-none
-            text-foreground-secondary
-            transition-all
-            duration-300
-            hover:bg-white/6
-            hover:text-foreground
-            data-active:bg-linear-to-l
-            data-active:from-white/10
-            data-active:to-transparent
-            data-active:text-primary
-            data-active:after:absolute
-            data-active:after:right-0
-            data-active:after:top-0
-            data-active:after:h-full
-            data-active:after:w-0.5
-            data-active:after:bg-white
-            data-active:after:shadow-[0_0_8px_rgba(255,255,255,0.9),0_0_20px_rgba(184,161,255,0.7)]
-            group-data-[collapsible=icon]:justify-center
-            group-data-[collapsible=icon]:px-0
-          "
-        >
-          <Bookmark size={18} className="shrink-0" />
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={isActive("/my-exploration")}
+                  tooltip="My Exploration"
+                  render={<Link href="/my-exploration" />}
+                  className="
+                    relative
+                    h-11
+                    w-full
+                    rounded-none
+                    text-foreground-secondary
+                    transition-all
+                    duration-300
+                    hover:bg-white/6
+                    hover:text-foreground
+                    data-active:bg-linear-to-l
+                    data-active:from-white/10
+                    data-active:to-transparent
+                    data-active:text-primary
+                    data-active:after:absolute
+                    data-active:after:right-0
+                    data-active:after:top-0
+                    data-active:after:h-full
+                    data-active:after:w-0.5
+                    data-active:after:bg-white
+                    data-active:after:shadow-[0_0_8px_rgba(255,255,255,0.9),0_0_20px_rgba(184,161,255,0.7)]
+                    group-data-[collapsible=icon]:justify-center
+                    group-data-[collapsible=icon]:px-0
+                  "
+                >
+                  <Bookmark size={18} className="shrink-0" />
 
-          <span className="group-data-[collapsible=icon]:hidden">
-            My Exploration
-          </span>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
-    </SidebarMenu>
-  </SidebarGroupContent>
-</SidebarGroup>
+                  <span className="group-data-[collapsible=icon]:hidden">
+                    My Exploration
+                  </span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
+        {/* ================= TEST YOUR KNOWLEDGE ================= */}
+
+        <SidebarGroup className="mt-4">
+          <SidebarGroupLabel
+            className="
+              px-3
+              text-[10px]
+              uppercase
+              tracking-[0.2em]
+              text-foreground-muted
+              group-data-[collapsible=icon]:hidden
+            "
+          >
+            Test Your Knowledge
+          </SidebarGroupLabel>
+
+          <SidebarGroupContent>
+            <SidebarMenu>
+              <SidebarMenuItem>
+                <SidebarMenuButton
+                  isActive={isActive("/discover/space-facts")}
+                  tooltip="Test Your Knowledge"
+                  render={
+                    <Link href="/discover/space-facts/#CosmicQuestions" />
+                  }
+                  className="
+                    relative
+                    h-11
+                    w-full
+                    rounded-none
+                    text-foreground-secondary
+                    transition-all
+                    duration-300
+
+                    hover:bg-white/6
+                    hover:text-foreground
+
+                    data-active:bg-linear-to-l
+                    data-active:from-white/10
+                    data-active:to-transparent
+                    data-active:text-primary
+
+                    data-active:after:absolute
+                    data-active:after:right-0
+                    data-active:after:top-0
+                    data-active:after:h-full
+                    data-active:after:w-0.5
+                    data-active:after:bg-white
+                    data-active:after:shadow-[0_0_8px_rgba(255,255,255,0.9),0_0_20px_rgba(184,161,255,0.7)]
+
+                    group-data-[collapsible=icon]:justify-center
+                    group-data-[collapsible=icon]:px-0
+                  "
+                >
+                  <BrainCircuit size={18} className="shrink-0" />
+
+                  <span className="group-data-[collapsible=icon]:hidden">
+                    Test Your Knowledge
+                  </span>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            </SidebarMenu>
+          </SidebarGroupContent>
+        </SidebarGroup>
 
       </SidebarContent>
 
